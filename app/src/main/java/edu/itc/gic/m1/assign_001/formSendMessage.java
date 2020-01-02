@@ -11,7 +11,6 @@ import android.widget.EditText;
 
 import java.util.Date;
 
-//import android.support.v7.app.ActionBar;
 
 public class formSendMessage extends AppCompatActivity {
     private ActionBar actionbar;
