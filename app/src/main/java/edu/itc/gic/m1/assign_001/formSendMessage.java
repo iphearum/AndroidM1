@@ -1,17 +1,19 @@
 package edu.itc.gic.m1.assign_001;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 
 import java.util.Date;
 
-public class formSendMessage extends Activity {
+//import android.support.v7.app.ActionBar;
+
+public class formSendMessage extends AppCompatActivity {
     private ActionBar actionbar;
     private EditText tTo, tTitle,tMessage;
 
@@ -20,9 +22,11 @@ public class formSendMessage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_send_obj_message);
+        actionbar = getSupportActionBar();
+
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setDisplayShowHomeEnabled(true);
-        actionbar.setTitle("frm Send object");
+        actionbar.setTitle("Get dataSend object");
 
 
         tTo = findViewById(R.id.txtTitle);

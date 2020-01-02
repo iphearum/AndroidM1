@@ -20,6 +20,7 @@ public class formGetMessage extends AppCompatActivity {
 
         abc = getSupportActionBar();
         abc.setDisplayShowHomeEnabled(true);
+        abc.setTitle("Data was Get");
         abc.setDisplayHomeAsUpEnabled(true);
 
 

@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +47,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void SendObject(View view) {
+
         Intent in = new Intent(MainActivity.this,formSendMessage.class);
-        startActivityForResult(in,2);
+        try {
+            //startActivityForResult(in,2);
+            startActivity(in);
+        }catch (Exception exo){
+            Toast.makeText(this, exo.toString(), Toast.LENGTH_SHORT).show();
+        }
+        //madeMessage msg = new madeMessage();
     }
 }
